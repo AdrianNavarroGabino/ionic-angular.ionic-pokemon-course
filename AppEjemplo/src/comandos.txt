@@ -1,0 +1,8 @@
+Instalar Ionic y Cordova:
+sudo npm install -g cordova ionic
+
+Crear proyecto:
+ionic start AppEjemplo blank --type=ionic-angular
+
+Lanzar aplicación:
+ionic serve
