@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { SecondPage } from '../second/second';
 
 @Component({
   selector: 'page-home',
@@ -14,5 +15,9 @@ export class HomePage {
 
   ejercicio() {
     this.exampleText = "segunda parte";
+
+    this.navCtrl.push(SecondPage, {
+      param: "desde navegación"
+    });
   }
 }
