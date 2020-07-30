@@ -14,4 +14,22 @@
   </ion-item>
 
   <button ion-button color="primary" (click)="ejercicio()">Botón</button>
+
+  <ion-content fullscreen>
+    <ion-list>
+      <ion-list-header>
+        Pokemons
+      </ion-list-header>
+
+      <ion-item *ngFor="let pokemon of fromApi">
+        <ion-label>
+          <h2>{{ pokemon.name }}</h2>
+          <h3>Id: {{ pokemon.id }}</h3>
+          <p>Height: {{ pokemon.height }}</p>
+          <p>Weight: {{ pokemon.weight }}</p>
+          <p>Type: {{ pokemon.types[0].type.name }}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
 </ion-content>
